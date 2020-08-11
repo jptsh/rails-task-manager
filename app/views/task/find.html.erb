@@ -1,0 +1,7 @@
+ <h1><%= @task.title %></h1>
+ <div>
+    <p><%=@task.details%></p>
+ </div>
+
+
+ This tasks is not completed yet <%= check_box("tag", tag.id, {checked: @task.completed}) %>
